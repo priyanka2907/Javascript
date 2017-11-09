@@ -1,0 +1,52 @@
+<html>
+<!-- 
+Javascript Function Demo: With Parameter & Without Parameter -->
+
+<body>
+
+<h2>
+Javascript Function Demo With Parameter & Without Parameter:
+
+
+</h2>
+<div id="WithoutPara">
+<br>
+</div>
+<br>
+<div id="WithPara">
+
+</div>
+</body>
+
+
+<script>
+
+// define function first;
+
+
+
+function MyFunction()
+{
+// function body
+
+document.write('Inside Without Parameter Function!'); // display message
+
+}
+
+
+document.getElementById('WithoutPara').innerHTML= MyFunction();// assign result to div
+
+// define with parameter function
+
+function addition(a,b){ // with parameter function
+
+
+var c=a+b; // addition
+
+return c; // return result 
+}
+
+document.getElementById('WithPara').innerHTML="Result Of With Parameter Function Is: "+ addition(30,5); // assign result to div pass parameter to function
+</script>
+
+</html>

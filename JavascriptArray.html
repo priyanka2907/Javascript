@@ -1,0 +1,84 @@
+<html>
+
+
+<body>
+<h2>
+Javascript Array Example:
+</h2>
+
+
+</body>
+
+<script>
+
+
+var MyArray=['Red','Orange','Black','Green','Pink','Yellow'];// define array
+
+document.write(MyArray);// display value of array;
+
+var arrayLeng= MyArray.sort(); // sort array
+document.write("<br><br>Sorting Of Array is<br>");
+document.write(arrayLeng);// display sort array
+
+var join1=MyArray.join('*');// join array by any keyword
+document.write("<br> <br>Join Example <br>");
+document.write(join1);// display join
+
+var popdemo= MyArray.pop();// display last element from array
+document.write("<br><br>POP Last Element From Array: <br>");
+
+document.write(popdemo);
+
+var pushDemo= MyArray.push('NewColor'); // add new element into array
+
+document.write("<br><br>Add New Element In array: <br>");
+document.write(pushDemo);
+document.write("<br> <br>My array Is: <br>");
+document.write(MyArray);// display array
+
+var arrayShift=MyArray.shift();// remove first element from array
+document.write("<br><br> Remove Element From array:<br>");
+document.write(arrayShift);// display array
+
+document.write("<br> <br>My array Is: <br>");
+document.write(MyArray);// remove first element from array:
+
+var reverseArray=MyArray.reverse();// reverse array
+document.write("<br> <br>Reverse Array :<br>");
+document.write(reverseArray);// display reverse array result
+
+
+/*
+
+OutPut
+
+Red,Orange,Black,Green,Pink,Yellow
+
+Sorting Of Array is
+Black,Green,Orange,Pink,Red,Yellow
+
+Join Example 
+Black*Green*Orange*Pink*Red*Yellow
+
+POP Last Element From Array: 
+Yellow
+
+Add New Element In array: 
+6
+
+My array Is: 
+Black,Green,Orange,Pink,Red,NewColor
+
+Remove Element From array:
+Black
+
+My array Is: 
+Green,Orange,Pink,Red,NewColor
+
+Reverse Array :
+NewColor,Red,Pink,Orange,Green
+*/
+
+</script>
+
+</html>
