@@ -1,0 +1,100 @@
+<html>
+<head>
+
+<title>Javascript Events:
+</title>
+</head>
+
+<body>
+<h1>Javascript Event Demo!</h1>
+
+
+<hr>
+<h2> Onchange Event</h2>
+
+<select name="MyColor" id="MyColor" onchange="myfunction();"><!--call myfunction function using onchange event  -->
+
+
+<option value="">Select Your Color</option>
+<option value="Red"> Red Color</option>
+<option value="Green"> Green Color</option>
+<option value="Yellow">Yellow Color</option>
+</select>
+
+<br>
+<br>
+<!-- div display result -->
+<div  id="MyColorDiv" style="color:red;font-size:20">
+</div>
+
+
+
+<button id="myButton" name="myButton" onclick="functionbuttonclick();" value="Click Me">Click Me</button>
+
+<div id="buttonclick" style="color:green;font-size:22"></div>
+
+<hr>
+<input type="text" id="mytext" name="mytext" onkeypress="keypressEvent();"> <!-- on key press event-->
+<h2>value of my textbox is !</h2>
+<div id="mytextval" style="color:orange;font-size:24">
+
+
+
+</div>
+
+
+<hr>
+
+<h2>Onmouseover Event</h2>
+
+<button id="mybutton" onmouseover="mymouseover();">Hover me!</button>
+<hr>
+
+<h2>Javscript Event Demo </h3>
+<div id="myover" style="color:orange;font-size:24"> </div>
+
+</body>
+
+<script>
+
+// onchange call
+function myfunction()
+{
+
+var color=document.getElementById("MyColor").value; // assign value of select box to color variable by  id
+
+document.getElementById("MyColorDiv").innerHTML="Inside Onchange Function Value of Color Is: "+color; // div name
+
+}
+// onclick call
+function functionbuttonclick()
+{
+
+document.getElementById('buttonclick').innerHTML="Button Click Event";
+}
+
+// key press event
+function keypressEvent()
+{
+
+var val=document.getElementById('mytext').value;
+
+document.getElementById('mytextval').innerHTML=val;
+}
+
+// onmouseover event call
+function mymouseover()
+{
+
+
+document.getElementById('myover').innerHTML="Inside Mouseover Function";
+
+
+
+
+
+}
+</script>
+
+
+</html>
