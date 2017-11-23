@@ -1,0 +1,68 @@
+<html>
+<p style="color:red;font-size:25px">Display Start pattern Traingle using javascript</p>
+
+
+<body>
+
+</body>
+
+<script>
+
+// declare variables
+
+var i=0;
+var j;
+// we required two for loop
+// one for increment counter
+// sceond for increment rows
+
+for(i=0;i<=5;i++)
+{
+// for rows
+
+for(j=i;j<=5;j++)
+
+{
+
+// for display * 
+
+document.write("*");
+
+}
+
+document.write('<br>');// for new line 
+
+}
+
+// display another traingle which start from 1 start 2, start & so on ...
+/*
+e.g:-
+*
+**
+***
+****
+*****
+
+*/
+
+//document.write("Start Second Traingle:<br>");
+var m=5; // define initial value
+var n; // define variable which is required for second for loop
+
+for(m=5;m>=0;m--) // first for loop for row counter
+{
+
+for(n=m;n<=5;n++) // second for loop for display data 
+{
+
+document.write('*');
+
+} // here logic is that if row is one display only one *
+// if row 2 display 2 *
+// if row3 display 3 * & so on ...
+document.write('<br>'); // after each row one br tag for new line
+}
+
+// also if you have any error please check your console press  f12 key on your keyboard.
+</script>
+</html>
